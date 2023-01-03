@@ -1,0 +1,144 @@
+
+<html lang="en">
+<head>
+	 <title>Home Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>                                                                                                             
+		<nav>
+			<h1>Movie Ticket</h1>
+			<div class="menu">
+				<a href="index.html">Home</a>
+				<a href="pages/services.html">Services</a>
+				<a href="pages/adminsignin.html">AdminLogin</a>
+				<a href="pages/usersigninup.html">USignup-in</a>
+			</div>
+
+			<button class="hamburger">
+				<span class="material-icons">menu</span>
+			</button>
+		</nav>
+	</header>
+
+	<main>
+		<section id="slider">
+			<div class="carousel-container">
+				<div class="carousel-box">
+				  <div class="carousel">
+					<img src="./Images/image6.jpg" alt="Image Cant Load" />
+					<div class="testimonial">
+					  <p class="testimonial-text">
+						We Provide services in different Cities and Towns .Our target is to extend services in every cities too.
+					  </p>
+					</div>
+				  </div>
+				</div>
+		  
+				<div class="carousel-box">
+				  <div class="carousel">
+					<img src="./Images/image4.jpeg" alt="Image Cant Load"/>
+					<div class="testimonial">
+					  <p class="testimonial-text">
+						We believe in Quality .We provides and use of Quality products while working .This makes the service to be longlasting with low-price.
+					  </p>
+					</div>
+				  </div>
+				</div>
+
+
+				<div class="carousel-box">
+				  <div class="carousel">
+					<img src="./Images/image1.jpg" alt="Image Cant Load" />
+					<div class="testimonial">
+					  <p class="testimonial-text">
+						Provide a Quick Delievry to our users and we wish our Customer to be happy and makes them trouble free by real-time communication in a efficient way.
+					  </p>
+					</div>
+				  </div>
+				</div>
+		  
+					  
+				<button class="btn btn--left" onclick="plusSlides(-1)">
+				  <svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="btn-icon"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor">
+					<path
+					  stroke-linecap="round"
+					  stroke-linejoin="round"
+					  stroke-width="2"
+					  d="M15 19l-7-7 7-7" />
+				  </svg>
+				</button>
+				<button class="btn btn--right" onclick="plusSlides(1)">
+				  <svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="btn-icon"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor">
+					<path
+					  stroke-linecap="round"
+					  stroke-linejoin="round"
+					  stroke-width="2"
+					  d="M9 5l7 7-7 7" />
+				  </svg>
+				</button>
+		  
+				<div class="dots">
+				  <span class="dot dot--fill" onclick="currentSlide(1)"></span>
+				  <span class="dot dot--fill" onclick="currentSlide(2)"></span>
+				  <span class="dot dot--fill" onclick="currentSlide(3)"></span>
+				</div>
+			  </div>
+	</section>
+
+	<section class="sec1">
+		<div>
+			<p>Make first step of booking your first slot by following some simple steps in a very quick way.We can respond in a very quick manner and mark your sceduled in our task book.
+			</p>
+			<button class="bookSlot" onclick="handleSlot()">Book Your Slot Now</button>
+	   </div>
+
+
+	</section>
+	</main>
+
+
+
+	
+<footer class="hero">
+        <div class="container flex">
+            <div class="container__about">
+                <h2>About</h2>
+                <p>In this platform we offer an variety of services to our Customers related to the Movie Booking.
+				   We Provide services in different Cities and Towns .Our target is to extend services in every cities
+				</p>
+            </div>
+            <div class="container-pages flex">
+
+                <div class="container__recentpages">
+                    <h2>More to See..</h2>
+                    <ul>
+                        <li><a href="#">Cities</a></li>
+                        <li><a href="#">Price Ranges</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="line__separete"></div>
+        <div class="by flex">
+            <p>Copyright © 2022 All Rights Reserved by Movie Ticket</p>
+        </div>
+
+    </footer>
+
+	<script src="index.js"></script>
+</body>
+</html>

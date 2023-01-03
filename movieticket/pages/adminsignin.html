@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <title>Sign In</title>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand',sans-serif;
+           
+        }
+
+        body{
+            background: #44c5b0;
+        }
+
+        .main_div{
+            width: 100%;
+            height:100vh;
+            position: relative;
+        }
+
+        .box{
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 50px;
+            background: #222;
+            border-radius: 10px;
+        }
+
+        .box h1{
+            margin-bottom: 30px;
+            color: #0f0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .box .inputBox{
+            position: relative;
+
+        }
+        
+         .box .inputBox input{
+         width: 100%;
+         padding: 10px;
+         font-size: 16px;
+         background: #333;
+         letter-spacing: 1px;
+         margin-bottom: 30px;
+         border: none;
+         border-bottom: 1px solid #fff;
+         border-radius: 5px;
+         /* background: transparent; */
+         color: #fff;
+         outline: none;
+        }
+        
+        .box .inputBox i{
+            position: absolute;
+            top: 0;
+            left: 0;
+            letter-spacing: 1px;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #aaa;
+            transition: 0.5s;
+
+        }
+
+        .links{ 
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content:flex-end;
+        }
+
+        .links a { 
+            color: #0f0;
+            text-decoration:none;
+            font-weight: 600; 
+        }
+
+       
+
+        .box input[type="submit"]{
+            padding: 8px;
+           background: #0f0;
+           color: #000;
+           font-weight: 600;
+           font-size: 1.25em;
+           letter-spacing: 0.05em;
+           cursor: pointer;
+           border-radius: 5px;
+
+        }
+
+        .box .inputBox input:focus~i,
+        .box .inputBox input:valid~i{
+            top: -20px;
+            left: 0;
+            color: #fff;
+            font-size: 12px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class=""main_div>
+       
+        <div class="box">
+
+            <h1>Sign In</h1>
+            <form action="../verifypsw.jsp" method="post">
+                <div class="inputBox">
+                    <input type="text" name="username" autocomplete="off" required>
+                    <i>Username</i>
+                </div>
+                 <div class="inputBox">
+                    <input type="password" name="password" autocomplete="off" required>
+                    <i>Password</i>
+                </div>
+                <input type="submit" value="Login">
+                
+            </form>
+            
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+<html lang="en">  
+
+<head>
+
+    <title>Add Movies</title>
+    <link rel="shortcut icon" href="./logo.jpeg" type="image/x-icon">
+
+    <style>
+        
+        body{
+           display: flex;
+           background: url("Images/image5.jpg") no-repeat center center / cover;
+           height: 100%;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+       }
+
+       form{
+           padding: 25px 15px;
+       }
+
+       .container{
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           display: flex;
+           flex-direction: column;  
+       }
+
+       .subset{
+            border-radius: 10px; 
+            background-color: rgb(31, 136, 96);  
+            padding: 6px;
+            margin-top: 15px;
+            cursor: pointer;
+       }
+
+       .subset:active{
+           background-color: rgb(118, 19, 184);
+       }
+
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend style="font-size: 25px; color: rgb(58, 58, 59)">ADD MOVIES</legend>
+
+    <form action="connectaddmovies.jsp" method="post" enctype="multipart/form-data" >
+
+        <div class="container">
+            <label for="name">Movie Name:</label>
+            <input type="text" id="name"  name="name" placeholder="Enter The Movie Name" required style="padding: 10px;">
+        </div><br>
+
+        <div class="container">
+            <label for="eed">Theatre Name:</label>
+            <input type="text" id="eed" name="theatrename" placeholder="Enter the Theatre Name" style="padding: 10px;">
+        </div><br>
+       
+        <div class="container">
+            <label for="eed">Release Date:</label>
+            <input type="date" id="eed" name="releasedate" placeholder="dd-mm-yyyy" style="padding: 10px;">
+        </div><br>
+        
+        <div class="container">
+            <label for="eon">Director:</label>
+            <input type="text" id="eon" name="director" placeholder="Director Name" style="padding: 10px;">
+        </div><br>
+        
+        <div class="container">
+            <label for="oe">Actor:</label>
+            <input type="text" id="oe" name="actor" placeholder="Actor Name" required style="padding: 10px;">
+        </div><br> 
+
+        <div class="container">
+            <label for="en">Actress Name:</label>
+            <input type="text" id="on" name="actress" placeholder="Actress Name" required style="padding: 10px;">
+        </div><br>
+
+        <div class="container">
+            <label for="esd">Description:</label>
+            <input type="text" id="esd" name="description" placeholder="Add some view on it." style="padding: 10px;">
+        </div><br>
+
+
+
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        
+        <input type="submit" value="Submit" class="subset">
+        
+    </form>
+</body>
+
+</html>
